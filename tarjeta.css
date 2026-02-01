@@ -1,0 +1,55 @@
+body {
+    background: linear-gradient(135deg, #0f0f0f, #1a1a40);
+    font-family: 'Orbitron', sans-serif;
+    color: #00fff7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.tarjeta {
+    background: rgba(20, 20, 50, 0.9);
+    border: 2px solid #00fff7;
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 0 20px #00fff7, 0 0 40px #00fff7 inset;
+    width: 300px;
+}
+
+.foto {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 2px solid #00fff7;
+    margin-bottom: 15px;
+}
+
+h1 {
+    margin: 10px 0;
+    font-size: 24px;
+    text-shadow: 0 0 10px #00fff7;
+}
+
+p {
+    margin: 5px 0;
+}
+
+.boton {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #00fff7;
+    color: #0f0f0f;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.boton:hover {
+    background: #0f0f0f;
+    color: #00fff7;
+    box-shadow: 0 0 10px #00fff7;
+}

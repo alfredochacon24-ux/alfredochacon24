@@ -1,0 +1,219 @@
+/* Fondo interactivo futurista */
+.fondo-interactivo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+}
+ 
+
+body:hover .fondo-interactivo {
+  transform: scale(1.05);
+  filter: brightness(1.15);
+  line-height: 1.6;
+}
+
+/* Importar fuentes futuristas */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Exo+2:wght@300;600&display=swap');
+
+/* Títulos principales */
+h1 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 48px;
+  color: #00e0ff;
+  text-shadow: 0 0 12px rgba(0, 224, 255, 0.7);
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+h1:hover {
+  transform: scale(1.08);
+  color: #7df9ff;
+}
+
+/* Subtítulos */
+h2 {
+  font-family: 'Exo 2', sans-serif;
+  font-size: 36px;
+  color: #c0ffee;
+  border-left: 4px solid #00e0ff;
+  padding-left: 10px;
+  transition: color 0.3s ease;
+}
+h2:hover {
+  color: #ffffff;
+}
+
+/* Sub-subtítulos */
+h3 {
+  font-family: 'Exo 2', sans-serif;
+  font-size: 26px;
+  color: #a8dadc;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+h3:hover {
+  color: #f1faee;
+}
+
+/* Línea divisoria */
+hr {
+  border: 0;
+  height: 2px;
+  background-image: linear-gradient(to right, transparent, #00e0ff, transparent);
+  margin: 40px auto;
+  width: 80%;
+}
+
+/* Texto en negrita */
+b {
+  
+  background-color: #1d3557;
+  color: #f1faee;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 28px;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+b:hover {
+  color: #f1faee;
+}
+/* Scroll suave */
+html {
+  scroll-behavior: smooth;
+}
+/* Párrafos futuristas */
+p {
+  font-family: 'Exo 2', sans-serif;
+  font-size: 18px;
+  color: #e0f7fa;
+  line-height: 1.8;
+  letter-spacing: 0.5px;
+
+  background: rgba(0, 224, 255, 0.05);
+  border-left: 3px solid #00e0ff;
+  padding: 14px 20px;
+  margin: 20px auto;
+  width: 85%;
+  border-radius: 6px;
+
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+p:hover {
+  color: #ffffff;
+  transform: translateX(5px);
+}
+/* Lista futurista de eras de videojuegos */
+ul.timeline {
+  list-style: none;
+  padding: 0;
+  margin: 40px auto;
+  width: 90%;
+}
+
+ul.timeline li {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 18px;
+  color: #e0f7fa;
+  background: rgba(0, 224, 255, 0.08);
+  border-left: 4px solid #00e0ff;
+  margin: 20px 0;
+  padding: 15px 20px;
+  border-radius: 8px;
+  position: relative;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+/* Efecto hover llamativo */
+ul.timeline li:hover {
+  background: rgba(0, 224, 255, 0.2);
+  color: #ffffff;
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(0, 224, 255, 0.7);
+}
+
+/* Punto luminoso estilo neón */
+ul.timeline li::before {
+  content: "";
+  position: absolute;
+  left: -12px;
+  top: 20px;
+  width: 12px;
+  height: 12px;
+  background: #00e0ff;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #00e0ff, 0 0 20px #00e0ff;
+}
+ul.timeline li::before {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.3); opacity: 0.6; }
+  100% { transform: scale(1); opacity: 1; }
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li a {
+  font-family: 'Orbitron', sans-serif;
+  color: #00e0ff;
+  text-decoration: none;
+  padding: 10px 15px;
+  border: 1px solid #00e0ff;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+  background: #00e0ff;
+  color: #0a0a0a;
+  box-shadow: 0 0 12px rgba(0, 224, 255, 0.7);
+}
+body {
+  background-color: #0a0a0a;
+  margin: 0;
+  padding: 0;
+  color: #e0e0e0;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li a {
+  font-family: 'Orbitron', sans-serif;
+  color: #00e0ff;
+  text-decoration: none;
+  padding: 10px 15px;
+  border: 1px solid #00e0ff;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+  background: #00e0ff;
+  color: #0a0a0a;
+  box-shadow: 0 0 12px rgba(0, 224, 255, 0.7);
+}
+
+/* Enlace activo */
+nav ul li a.active {
+  background: #00e0ff;
+  color: #0a0a0a;
+  box-shadow: 0 0 15px rgba(0, 224, 255, 1);
+}
+
+
